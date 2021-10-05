@@ -2,4 +2,4 @@
 
 > Repositorio con templates para hefesto
 
-[project-hefeto](https://github.com/brianwolf/repo-hefesto)
+[project-hefeto](https://github.com/brianwolf/project-hefesto)
