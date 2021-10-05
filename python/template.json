@@ -4,14 +4,15 @@
         "url": "{{ repo }}"
     },
     {
+        "module": "delete",
+        "path": "project-python-39/.git"
+    },
+    {
         "module": "replace_dir",
         "words": {
             "base": "{{ nombre_app }}",
             "project-python-39": "{{ nombre_app }}"
-        },
-        "ignore": [
-            ".git"
-        ]
+        }
     },
     {
         "module": "replace_content",
@@ -19,9 +20,6 @@
             "Template de Python 3 para proyectos base, utliza las librerias del repo de [este link](https://github.com/brianwolf/repo-python-libs)": "{{ descripcion_app }}",
             "base": "{{ nombre_app }}",
             "project-python-39": "{{ nombre_app }}"
-        },
-        "ignore": [
-            ".git"
-        ]
+        }
     }
 ]
