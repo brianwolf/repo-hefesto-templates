@@ -17,9 +17,10 @@
     {
         "module": "replace_content",
         "words": {
-            "Template de Python 3 para proyectos base, utliza las librerias del repo de [este link](https://github.com/brianwolf/repo-python-libs)": "{{ descripcion_app }}",
+            "Template de Python 3": "{{ descripcion_app }}",
             "base": "{{ nombre_app }}",
             "project-python-39": "{{ nombre_app }}"
-        }
+        },
+        "ignore": [".git", "{{ nombre_app }}/logic/libs"]
     }
 ]

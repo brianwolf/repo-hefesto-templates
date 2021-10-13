@@ -9,3 +9,6 @@ run-pipeline p:
 	
 run-template t:
 	docker run -v $(shell pwd):/tmp brianwolf94/project-hefesto ./exec_template.py -p /tmp/${PARAMS} -z /tmp/${ZIP} -t /tmp/${TEMPLATE}
+
+update-image u:
+	docker pull brianwolf94/project-hefesto
