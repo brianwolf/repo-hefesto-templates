@@ -1,0 +1,27 @@
+[
+    {
+        "module": "git_clone",
+        "url": "{{ repo }}"
+    },
+    {
+        "module": "sh",
+        "cmd": "cp -r dockers-utiles/cicd/rundeck ."
+    },
+    {
+        "module": "delete",
+        "path": "dockers-utiles"
+    },
+    {
+        "module": "replace_dir",
+        "words": {
+            "rundeck": "{{ proyecto }}"
+        }
+    },
+    {
+        "module": "replace_content",
+        "words": {
+            "rundeck": "{{ proyecto }}",
+            "Rundeck": "{{ titulo }}"
+        }
+    }
+]
