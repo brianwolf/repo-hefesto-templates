@@ -1,6 +1,0 @@
-{
-    "repo": "https://github.com/brianwolf/dockers-utiles.git",
-    "proyecto": "dozzle",
-    "titulo": "Dozzle logs",
-    "texto": "Herramienta para ver logs de docker"
-}
