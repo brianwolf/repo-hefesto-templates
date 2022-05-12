@@ -1,0 +1,20 @@
+- module: git_clone
+  url: github.com/brianwolf/project-hefesto.git
+
+- module: delete
+  path: project-hefesto/.git
+  
+- module: delete
+  path: project-hefesto/examples
+
+- module: replace_dir
+  words:
+    project-hefesto: "project-{{ nombre_app }}"
+
+- module: replace_content
+  words:
+    Hefesto: "{{ nombre_app }}"
+    hefesto: "{{ nombre_app }}"
+    Dios herrero griego usado para forjar tus proyectos: "{{ descripcion_app }}"
+  ignore:
+  - ".git"
