@@ -1,5 +1,5 @@
 - module: git_clone
-  url: github.com/brianwolf/project-python-39.git
+  url: github.com/brianwolf/project-python3-flask.git
 
 - module: delete
   path: project-python-39/.git
