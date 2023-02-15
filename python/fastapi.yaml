@@ -6,14 +6,14 @@
 
 - module: replace_dir
   words:
-    project-python3-fastapi: {{ app_name }}
+    project-python3-fastapi: {{ name }}
 
 - module: replace_content
   words:
-    Example python project API: {{ app_desc }}
-    Example API: {{ app_name }}
-    project-python3-fastapi: {{ app_name }}
-    Template de Python 3 con fastapi: {{ app_desc }}
+    Example python project API: {{ desc }}
+    Example API: {{ name }}
+    project-python3-fastapi: {{ name }}
+    Template de Python 3 con fastapi: {{ desc }}
   ignore:
     - ".git"
     - "logic/libs"
