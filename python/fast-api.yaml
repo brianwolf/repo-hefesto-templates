@@ -1,0 +1,21 @@
+- module: git_clone
+  url: github.com/brianwolf/project-python3-flask.git
+
+- module: delete
+  path: project-python3-fastapi/.git
+
+- module: replace_dir
+  words:
+    project-python3-fastapi: {{ nombre_app }}
+
+- module: replace_content
+  words:
+    Example python project API: {{ desc_app }}
+    Example API: {{ nombre_app }}
+    project-python3-fastapi: {{ nombre_app }}
+    Template de Python 3 con fastapi: {{ desc_app }}
+  ignore:
+    - ".git"
+    - "logic/libs"
+
+  
