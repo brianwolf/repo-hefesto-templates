@@ -6,12 +6,12 @@
 
 - module: replace_dir
   words:
-    project-python3-flask: {{ app_name }}
+    project-python3-flask: {{ name }}
 
 - module: replace_content
   words:
-    project-python3-flask: {{ app_name }}
-    Template de Python 3 con Flask: {{ app_desc }}
+    project-python3-flask: {{ name }}
+    Template de Python 3 con Flask: {{ desc }}
   ignore:
     - ".git"
     - "logic/libs"
