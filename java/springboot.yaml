@@ -3,25 +3,25 @@
 
 - module: replace_dir
   words:
-    project-java-springboot: {{ nombre_app }}
+    project-java-springboot: {{ name }}
 
 - module: workingdir
-  path: {{ nombre_app }}
+  path: {{ name }}
 
 - module: delete
-  path: .github
+  path: .git
 
 - module: replace_dir
   words:
-    demo: "{{ nombre_app }}"
-    brianlobo: "{{ nombre_org }}"
+    demo: {{ name }}
+    brianlobo: {{ org }}
 
 - module: replace_content
   words:
-    com.brianlobo.demo: com.{{ nombre_org }}.{{ nombre_app }}
-    Demo API: {{titulo}}
-    Demo java springboot API: {{desc}}
-    Demo springboot java 17: {{titulo}}
-    Demo de proyecto base para java 17 con springboot 3: {{desc}}
+    com.brianlobo.demo: com.{{ org }}.{{ name }}
+    Demo API: {{ title }}
+    Demo java springboot API: {{ desc }}
+    Demo springboot java 17: {{ title }}
+    Demo de proyecto base para java 17 con springboot 3: {{ desc }}
   ignore:
   - ".git"
